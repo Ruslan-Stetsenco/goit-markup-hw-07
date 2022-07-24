@@ -1,0 +1,36 @@
+.work__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.work {
+    padding-top: 0;
+}
+
+.work__thumb {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.work__item-description {
+    @include center;
+    
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    padding: 27px 82px;
+    background-color: #2f303acc;
+    margin: 0;
+    bottom: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $background-card-team;
+}
+

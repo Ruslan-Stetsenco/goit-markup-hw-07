@@ -1,0 +1,140 @@
+.footer {
+    background-color: $color-background;
+    padding: 64px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+
+.footer__address {
+    margin-top: 20px;
+}
+
+.footer__link {
+    font-style: normal;
+    line-height: 1.71;
+    color: $background-card-team;
+    text-decoration: none;
+    margin: 0;
+        &:hover,
+        &:focus {
+        color: $brand-color;
+    }
+}
+
+
+
+.footer__item {
+    margin-top: 9px;
+}
+
+.footer__subscription-link {
+    @include center;
+    
+    height: 44px;
+    width: 44px;
+    
+    background-color: $footer-background-icon;
+    border-radius: 50%;
+    transition: background-color $transition;
+        &:hover,
+        &:focus {
+            background-color: $brand-color;
+        }
+}
+
+.footer__subscription-item {
+    margin-right: 10px;
+        &:last-child {
+        margin-right: 0px;
+        }
+}
+
+
+
+
+
+.footer__form-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $background-card-team;
+}
+
+.footer__subscription-link-icon {
+    width: 20px;
+    height: 20px;
+    fill: $background-card-team;
+}
+
+.footer__subscription-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__form-field {
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer__form-input {
+    height: 50px;
+    width: 358px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 15px 15px;
+    color: $background-card-team;
+    line-height: 1.25;
+}
+
+.footer__form-button {
+    @include center;
+    margin-top: 20px;
+    min-width: 200px;
+    padding: 10px 3px;
+    border-radius: 4px;
+    margin-left: 12px;
+    color: $background-card-team;
+    background-color: $brand-color;
+    border: none;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:hover {
+            background-color: $hever-button-color;
+        }
+}
+
+
+.footer__form-icon {
+    margin-left: 10px;
+    fill: currentColor;
+}
+
+.footer__form {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $background-card-team;
+}

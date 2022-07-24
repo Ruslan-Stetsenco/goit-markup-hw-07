@@ -1,0 +1,20 @@
+//..color..
+$brand-color: #2196f3;
+$hever-button-color: #188ce8;
+$color-background: #2f303a;
+$color-background-team: #f5f4fa;
+$background-card-team: #ffffff;
+$main-text-color: #212121;
+$second-text-color: #757575;
+$contact-text: #ffffff99;
+$footer-background-icon: #ffffff10;
+
+//..animation..
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//..mixin..
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

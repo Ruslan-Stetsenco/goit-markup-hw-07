@@ -1,0 +1,73 @@
+.team {
+    background-color: $color-background-team;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team__item {
+    background-color: $background-card-team;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__thumb {
+    padding: 30px 30px;
+}
+
+.team__partner-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team__partner-proffession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    color: $second-text-color;
+}
+
+.team__partner-socials {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.team__partner-link-icon {
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill $transition;
+}
+
+.team__partner-link {
+    height: 44px;
+    width: 44px;
+
+    @include center;
+    
+    border-radius: 50%;
+
+    transition: background-color $transition;
+    &:hover .team__partner-link-icon {
+            fill: $background-card-team;
+        }
+    
+        &:focus .team__partner-link-icon {
+            fill: $background-card-team;
+        }
+}
+
+.team__partner-link:hover,
+.team__partner-link:focus {
+    background-color: $brand-color;
+}
+

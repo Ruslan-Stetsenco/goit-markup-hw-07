@@ -1,0 +1,23 @@
+@import './utils/variables';
+
+@import './base/common';
+@import './base/reset';
+
+@import './component/logo';
+@import './component/header-text';
+@import './component/sections';
+@import './component/backdrops';
+@import './component/hiden-components';
+@import './component/modal';
+
+@import './layout/header';
+@import './layout/footer';
+
+@import './layout/hero';
+@import './layout/peculiarities';
+@import './layout/work';
+@import './layout/team';
+@import './layout/customers';
+@import './layout/modal';
+
+@import './layout/portfolio';

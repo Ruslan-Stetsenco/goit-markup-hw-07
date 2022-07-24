@@ -1,0 +1,40 @@
+
+
+.peculiarities__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.peculiarities__item {
+    width: 270px;
+}
+
+.peculiarities__background {
+    @include center;
+    
+    margin-bottom: 30px;
+    
+    width: 270px;
+    height: 120px;
+    
+    background-color: $color-background-team;
+    border-radius: 4px;
+}
+
+.peculiarities__title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: $main-text-color;
+    margin: 0;
+}
+
+.peculiarities__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $second-text-color;
+    margin: 0;
+    margin-top: 10px;
+}
