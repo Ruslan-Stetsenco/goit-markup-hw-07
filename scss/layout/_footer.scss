@@ -9,8 +9,6 @@
     justify-content: space-between;
 }
 
-
-
 .footer__address {
     margin-top: 20px;
 }
@@ -21,43 +19,45 @@
     color: $background-card-team;
     text-decoration: none;
     margin: 0;
-        &:hover,
-        &:focus {
+    transition: $transition;
+}
+
+.footer__item {
+    margin-top: 9px;
+
+    a {
+        color: #ffffff99;
+    }
+
+    a:hover,
+    a:focus {
         color: $brand-color;
     }
 }
 
-
-
-.footer__item {
-    margin-top: 9px;
-}
-
 .footer__subscription-link {
     @include center;
-    
+
     height: 44px;
     width: 44px;
-    
+
     background-color: $footer-background-icon;
     border-radius: 50%;
     transition: background-color $transition;
-        &:hover,
-        &:focus {
-            background-color: $brand-color;
-        }
+
+    &:hover,
+    &:focus {
+        background-color: $brand-color;
+    }
 }
 
 .footer__subscription-item {
     margin-right: 10px;
-        &:last-child {
+
+    &:last-child {
         margin-right: 0px;
-        }
+    }
 }
-
-
-
-
 
 .footer__form-text {
     font-weight: 700;
@@ -119,12 +119,12 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:focus,
-        &:hover {
-            background-color: $hever-button-color;
-        }
-}
 
+    &:focus,
+    &:hover {
+        background-color: $hever-button-color;
+    }
+}
 
 .footer__form-icon {
     margin-left: 10px;

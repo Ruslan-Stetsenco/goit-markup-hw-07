@@ -31,6 +31,10 @@ img {
   height: auto;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .point {
   margin: 0;
   padding: 0;
@@ -256,11 +260,13 @@ img {
 }
 
 .header__cont-link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -284,13 +290,18 @@ img {
   color: #ffffff;
   text-decoration: none;
   margin: 0;
-}
-.footer__link:hover, .footer__link:focus {
-  color: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__item {
   margin-top: 9px;
+}
+.footer__item a {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer__item a:hover,
+.footer__item a:focus {
+  color: #2196f3;
 }
 
 .footer__subscription-link {
